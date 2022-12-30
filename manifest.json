@@ -1,0 +1,9 @@
+{
+    "manifest version": 3,
+    "version": "1.0",
+    "name": "Chrome URL Saver",
+    "action": {
+        "default_popup": "index.html",
+        "default_icon": "icon.png"
+    }
+}
