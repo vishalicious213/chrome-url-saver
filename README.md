@@ -14,3 +14,15 @@ Chrome extension to save website URLs
 - element.innerHTML
 - document.createElement()
 - template literals / template strings
+
+## Other concept
+
+- deployed locally to Chrome
+  - added manifest.json
+  - added icon.png
+  - navigated to chrome://extensions/
+  - turned on developer mode
+  - clicked "Load unpacked"
+  - pointed to application folder
+  - verified that application appears in extensions list
+  - tested application in new browser tab
