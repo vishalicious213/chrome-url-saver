@@ -12,3 +12,4 @@ Chrome extension to save website URLs
 - for loops
 - += (to add to an element, instead of overwriting it)
 - element.innerHTML
+- document.createElement()

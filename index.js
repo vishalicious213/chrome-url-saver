@@ -11,9 +11,9 @@ function showSavedInputs() {
     for (let i = 0; i < savedInputs.length; i++) {
         savedInputsEl.innerHTML += `<li>${savedInputs[i]}</li>`
         // THIS IS HOW TO DO THE ABOVE USING JAVASCRIPT:
-        // const li = document.createElement("li")
-        // li.textContent = savedInputs[i]
-        // savedInputsEl.append(li)
+        // const li = document.createElement("li") // create element
+        // li.textContent = savedInputs[i] // set text content
+        // savedInputsEl.append(li) // append to ul
     }
 }
 
