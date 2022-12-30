@@ -8,3 +8,5 @@ Chrome extension to save website URLs
 - onclick()
 - document.getElementById()
 - addEventListener()
+- array.push()
+- for loops
