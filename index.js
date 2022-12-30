@@ -6,6 +6,7 @@ let savedInputs = []
 inputBtn.addEventListener("click", function() {
     savedInputs.push(inputEl.value)
     showSavedInputs()
+    inputEl.value = "" // clear input field after text is saved
 })
 
 function showSavedInputs() {
