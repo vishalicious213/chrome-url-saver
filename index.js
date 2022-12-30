@@ -10,6 +10,10 @@ inputBtn.addEventListener("click", function() {
 function showSavedInputs() {
     for (let i = 0; i < savedInputs.length; i++) {
         savedInputsEl.innerHTML += `<li>${savedInputs[i]}</li>`
+        // THIS IS HOW TO DO THE ABOVE USING JAVASCRIPT:
+        // const li = document.createElement("li")
+        // li.textContent = savedInputs[i]
+        // savedInputsEl.append(li)
     }
 }
 

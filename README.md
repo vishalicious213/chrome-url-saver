@@ -10,3 +10,5 @@ Chrome extension to save website URLs
 - addEventListener()
 - array.push()
 - for loops
+- += (to add to an element, instead of overwriting it)
+- element.innerHTML
