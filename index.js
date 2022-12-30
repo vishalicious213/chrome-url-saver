@@ -12,7 +12,7 @@ inputBtn.addEventListener("click", function() {
 function showSavedInputs() {
     let savedInputsList = ""
     for (let i = 0; i < savedInputs.length; i++) {
-        savedInputsList += `<li>${savedInputs[i]}</li>`
+        savedInputsList += `<li><a href="https://${savedInputs[i]}" target="_blank">${savedInputs[i]}</a></li>`
         // THIS IS HOW TO DO THE ABOVE USING JAVASCRIPT:
         // const li = document.createElement("li") // create element
         // li.textContent = savedInputs[i] // set text content
