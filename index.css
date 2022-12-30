@@ -28,3 +28,26 @@ button:hover {
     background-color: steelblue;
     color: white;
 }
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    margin-top: .25rem;
+}
+
+a {
+    color: steelblue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: lightsteelblue;
+}
+
+a:hover {
+    text-decoration: underline;
+    font-weight: 600;
+}
