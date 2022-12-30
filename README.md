@@ -15,7 +15,7 @@ Chrome extension to save website URLs
 - document.createElement()
 - template literals / template strings
 
-## Other concept
+## Other: Deploying to Chrome locally
 
 - deployed locally to Chrome
   - added manifest.json

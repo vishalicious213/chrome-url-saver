@@ -7,6 +7,7 @@ inputBtn.addEventListener("click", function() {
     savedInputs.push(inputEl.value)
     showSavedInputs()
     inputEl.value = "" // clear input field after text is saved
+    localStorage.setItem("saved-urls", JSON.stringify(savedInputs)) // save URL to localStorage
 })
 
 function showSavedInputs() {
