@@ -18,15 +18,27 @@ input:focus {
 
 button {
     text-transform: uppercase;
-    background-color: lightsteelblue;
-    border: none;
+    background-color: #315b7e;
+    color: white;
+    border: 1px solid #315b7e;
     padding: .5rem 1rem;
     margin-top: .5rem;
     font-weight: 600;
 }
 
 button:hover {
-    background-color: steelblue;
+    background-color: #598fbc;
+    color: white;
+}
+
+#delete-btn {
+    background-color: firebrick;
+    border: 1px solid firebrick;
+    color: white;
+}
+
+#delete-btn:hover {
+    background-color: crimson;
     color: white;
 }
 
