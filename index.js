@@ -8,7 +8,7 @@ const urlsFromLocalStorage = JSON.parse(localStorage.getItem("saved-urls"))
 // function to add URL to array and save to localStorage
 inputBtn.addEventListener("click", function() {
     savedInputs.push(inputEl.value)
-    showSavedUrls()
+    showSavedUrls(savedUrls)
     inputEl.value = "" // clear input field after text is saved
     localStorage.setItem("saved-urls", JSON.stringify(savedUrls)) // save URL to localStorage
 })
@@ -17,17 +17,17 @@ inputBtn.addEventListener("click", function() {
 deleteBtn.addEventListener("click", function() {
     localStorage.clear() // remove URLs from localStorage
     savedUrls = [] // set savedUrls to empty array
-    showSavedUrls() // render empty array
+    showSavedUrls(savedUrls) // render empty array
 })
 
 // function to display saved URLs
-function showSavedUrls() {
+function showSavedUrls(urls) {
     let savedInputsList = ""
-    for (let i = 0; i < savedUrls.length; i++) {
-        savedInputsList += `<li><a href="https://${savedUrls[i]}" target="_blank">${savedUrls[i]}</a></li>`
+    for (let i = 0; i < urls.length; i++) {
+        savedInputsList += `<li><a href="https://${urls[i]}" target="_blank">${urls[i]}</a></li>`
         // THIS IS HOW TO DO THE ABOVE USING JAVASCRIPT:
         // const li = document.createElement("li") // create element
-        // li.textContent = savedUrls[i] // set text content
+        // li.textContent = urls[i] // set text content
         // savedInputsEl.append(li) // append to ul
     }
     savedInputsEl.innerHTML = savedInputsList
@@ -36,5 +36,5 @@ function showSavedUrls() {
 // if any URLs were saved, render them when application is launched
 if (urlsFromLocalStorage) {
     savedUrls = urlsFromLocalStorage
-    showSavedUrls()
+    showSavedUrls(savedUrls)
 }
