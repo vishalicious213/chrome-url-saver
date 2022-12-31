@@ -2,7 +2,9 @@ const inputBtn = document.getElementById("input-btn")
 const inputEl = document.getElementById("input-el")
 const savedInputsEl = document.getElementById("saved-inputs-el")
 let savedInputs = []
+let urlsFromLocalStorage = JSON.parse(localStorage.getItem("saved-urls"))
 
+// function to add URL to array and save to localStorage
 inputBtn.addEventListener("click", function() {
     savedInputs.push(inputEl.value)
     showSavedInputs()
@@ -10,6 +12,7 @@ inputBtn.addEventListener("click", function() {
     localStorage.setItem("saved-urls", JSON.stringify(savedInputs)) // save URL to localStorage
 })
 
+// function to display saved URLs
 function showSavedInputs() {
     let savedInputsList = ""
     for (let i = 0; i < savedInputs.length; i++) {
@@ -22,4 +25,8 @@ function showSavedInputs() {
     savedInputsEl.innerHTML = savedInputsList
 }
 
-showSavedInputs()
+// if any URLs were saved, render them when application is launched
+if (urlsFromLocalStorage) {
+    savedInputs = urlsFromLocalStorage
+    showSavedInputs()
+}
